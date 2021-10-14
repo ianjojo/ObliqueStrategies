@@ -3,12 +3,223 @@ html {
   box-sizing: border-box;
 }
 
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #3e1e68;
+  overflow: hidden;
+  z-index: -5;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 26;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #583c87;
+  top: 88%;
+  left: 48%;
+  animation-duration: 168s;
+  animation-delay: -195s;
+  transform-origin: -3vw -15vh;
+  box-shadow: -40vmin 0 5.230624722440029vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #583c87;
+  top: 33%;
+  left: 13%;
+  animation-duration: 151s;
+  animation-delay: -163s;
+  transform-origin: 17vw 2vh;
+  box-shadow: -40vmin 0 5.940000138964228vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #e45a84;
+  top: 18%;
+  left: 40%;
+  animation-duration: 198s;
+  animation-delay: -163s;
+  transform-origin: 8vw -6vh;
+  box-shadow: 40vmin 0 5.864212291830493vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #e45a84;
+  top: 73%;
+  left: 20%;
+  animation-duration: 15s;
+  animation-delay: -219s;
+  transform-origin: -14vw -22vh;
+  box-shadow: 40vmin 0 5.029026894749998vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #e45a84;
+  top: 47%;
+  left: 5%;
+  animation-duration: 71s;
+  animation-delay: -12s;
+  transform-origin: 12vw 14vh;
+  box-shadow: -40vmin 0 5.501673219611995vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #583c87;
+  top: 4%;
+  left: 89%;
+  animation-duration: 221s;
+  animation-delay: -105s;
+  transform-origin: 20vw 24vh;
+  box-shadow: -40vmin 0 5.861214851884884vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #e45a84;
+  top: 23%;
+  left: 67%;
+  animation-duration: 51s;
+  animation-delay: -103s;
+  transform-origin: -18vw -13vh;
+  box-shadow: 40vmin 0 5.268767160901584vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #583c87;
+  top: 11%;
+  left: 22%;
+  animation-duration: 101s;
+  animation-delay: -15s;
+  transform-origin: -23vw 20vh;
+  box-shadow: 40vmin 0 5.760806698177033vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #ffacac;
+  top: 44%;
+  left: 39%;
+  animation-duration: 113s;
+  animation-delay: -49s;
+  transform-origin: -12vw 17vh;
+  box-shadow: 40vmin 0 5.540430830099266vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #e45a84;
+  top: 29%;
+  left: 87%;
+  animation-duration: 16s;
+  animation-delay: -7s;
+  transform-origin: -14vw -2vh;
+  box-shadow: 40vmin 0 5.226271210014324vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #e45a84;
+  top: 100%;
+  left: 37%;
+  animation-duration: 21s;
+  animation-delay: -79s;
+  transform-origin: -10vw 23vh;
+  box-shadow: -40vmin 0 5.090921243065213vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ffacac;
+  top: 20%;
+  left: 89%;
+  animation-duration: 11s;
+  animation-delay: -224s;
+  transform-origin: -15vw -4vh;
+  box-shadow: 40vmin 0 5.57809088090332vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #583c87;
+  top: 91%;
+  left: 5%;
+  animation-duration: 166s;
+  animation-delay: -239s;
+  transform-origin: -14vw 12vh;
+  box-shadow: 40vmin 0 5.227569781969994vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #e45a84;
+  top: 26%;
+  left: 60%;
+  animation-duration: 236s;
+  animation-delay: -128s;
+  transform-origin: -15vw -5vh;
+  box-shadow: 40vmin 0 5.605662680654719vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #ffacac;
+  top: 55%;
+  left: 20%;
+  animation-duration: 29s;
+  animation-delay: -65s;
+  transform-origin: -4vw 11vh;
+  box-shadow: -40vmin 0 5.998159543126608vmin currentColor;
+}
+.background span:nth-child(15) {
+  color: #e45a84;
+  top: 74%;
+  left: 41%;
+  animation-duration: 191s;
+  animation-delay: -146s;
+  transform-origin: 23vw 18vh;
+  box-shadow: -40vmin 0 5.283999729299124vmin currentColor;
+}
+.background span:nth-child(16) {
+  color: #ffacac;
+  top: 27%;
+  left: 28%;
+  animation-duration: 120s;
+  animation-delay: -208s;
+  transform-origin: -14vw 4vh;
+  box-shadow: -40vmin 0 5.32486044806768vmin currentColor;
+}
+.background span:nth-child(17) {
+  color: #e45a84;
+  top: 77%;
+  left: 78%;
+  animation-duration: 207s;
+  animation-delay: -45s;
+  transform-origin: -20vw -13vh;
+  box-shadow: -40vmin 0 5.087748433137933vmin currentColor;
+}
+.background span:nth-child(18) {
+  color: #ffacac;
+  top: 50%;
+  left: 50%;
+  animation-duration: 164s;
+  animation-delay: -168s;
+  transform-origin: -8vw 24vh;
+  box-shadow: -40vmin 0 5.799118925313084vmin currentColor;
+}
+.background span:nth-child(19) {
+  color: #ffacac;
+  top: 61%;
+  left: 1%;
+  animation-duration: 81s;
+  animation-delay: -18s;
+  transform-origin: -4vw -15vh;
+  box-shadow: 40vmin 0 5.946006019297429vmin currentColor;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f0eaf8;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23000000' fill-opacity='0.09'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
-  color: #000;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+
+  color: rgba(255, 255, 255, 0.8);
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   text-align: center;
@@ -19,11 +230,16 @@ body {
 
 .quote-container {
   width: auto;
+  min-width: 400px;
   max-width: 900px;
   padding: 20px 30px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .quote-text {
@@ -52,26 +268,48 @@ body {
 }
 
 button {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
   cursor: pointer;
-  font-size: 1.2rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  background-color: #333;
-  outline: none;
-  padding: 0.5rem 1.8rem;
-  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
-  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
 }
 
 button:hover {
-  filter: brightness(110%);
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: brightness(210%);
+
+  transition: 0.2s;
 }
 
+// button {
+//   cursor: pointer;
+//   font-size: 1.2rem;
+//   height: 2.5rem;
+//   border: none;
+//   border-radius: 10px;
+//   color: #fff;
+//   background-color: #333;
+//   outline: none;
+//   padding: 0.5rem 1.8rem;
+//   box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+//   font-family: Montserrat, sans-serif;
+// }
+
+// button:hover {
+//   filter: brightness(110%);
+// }
+
 button:active {
-  transform: translate(0, 0.3rem);
-  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+  transform: translate(0, 0.1rem);
 }
 
 .twitter-button:hover {
